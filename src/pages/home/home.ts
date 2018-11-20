@@ -51,7 +51,7 @@ export class HomePage {
 
   standardizeValue(value) {
     if (value > 300) {
-      if (value === 360 || value % 360 === 0) {
+      if (value % 360 === 0) {
         return 0;
       }
       else {
