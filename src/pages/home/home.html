@@ -6,9 +6,9 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <div class="container">
-    <div class="content">
+<ion-content (click)="swipeEvent($event)">
+  <div [@rotateHexagon]="{value: state, params:{currentRotation: currentRotation}}" class="container">
+    <div class="content-hex">
       <div class="hex2-row">
         <div class="hex invisible">
           <div class="left"></div>
